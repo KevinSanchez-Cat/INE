@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:ine/src/model/people.dart';
 
+final personaref = FirebaseDatabase.instance.reference().child('Persona');
+
 class InfoPersona extends StatefulWidget {
   final Persona persona;
   InfoPersona(this.persona);

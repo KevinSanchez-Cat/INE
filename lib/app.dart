@@ -1,11 +1,15 @@
-import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
+import 'package:ine/src/ui/lista_people.dart';
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Center(
+          child: ListViewPerson(),
+        ));
   }
 }
